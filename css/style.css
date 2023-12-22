@@ -1,3 +1,10 @@
+/* Button Styling */
+.button {
+    top: 25px;
+    left: 25px;
+    z-index: 2;
+}
+
 /* Contact Styling */
 .mobile-contact {
     height: 30%;

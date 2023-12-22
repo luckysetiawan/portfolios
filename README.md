@@ -8,5 +8,6 @@ This is my portofolios. This project is part of [my personal website](https://lu
 * [reveal.js](https://revealjs.com/)
 * [reveal.js-menu](https://github.com/denehyg/reveal.js-menu)
 * [Google Fonts](https://fonts.google.com/)
+* [Font Awesome](https://fontawesome.com/)
 * [particles.js](https://vincentgarreau.com/particles.js/)
 * [ICONS8](https://icons8.com/)
