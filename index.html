@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Lucky's Personal Website">
+		<meta name="keywords" content="Lucky Setiawan, Lucky, Setiawan, Programmer, Developer, Web Developer, Software Developer, Software Engineer">
+		<meta name="author" content="Lucky Setiawan">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Portofolios</title>
+
+		<!-- 3rd Party CSS -->
+		<link rel="stylesheet" href="lib/reveal.js/reset.css">
+		<link rel="stylesheet" href="lib/reveal.js/reveal.css">
+		<link rel="stylesheet" href="lib/reveal.js/theme/lucky.css" id="theme">
+		<!-- Internal CSS -->
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Internal JS -->
+		<script src="js/component.js"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div id="particles-js"></div>
+			<div class="slides">
+				<!-- 1st slide -->
+				<section>
+					<section>
+						<span class="menu-title" style="display: none;">Curio-QA</span>
+						<h2><span class="rainbow_text_animated">Curio-QA</span></h2>
+						<p>Curio-QA is a QA app that allows its users to send <i>curios</i> to all of its users. With this app, its users will be able to send and receive their questions in the form of curios. The receiver could answer the curio on any platform they like and then mark the curio as answered.</p>
+
+						<icon-component logo="go"></icon-component>
+						<icon-component logo="mongodb"></icon-component>
+						<icon-component logo="redis"></icon-component>
+						<icon-component logo="docker"></icon-component>
+					</section>
+					<section>
+						<span class="menu-title" style="display: none;">Current State</span>
+						<p>Currently, this app is only a web service that can provide its services via REST API. For real-life implementations, a client should be created. Thanks to the advantages of REST API, this app can be used in mobile apps, desktop apps, and web apps.</p>
+					</section>
+					<section>
+						<span class="menu-title" style="display: none;">API Docs - Server Status</span>
+						<p>Check Server Status</p>
+						<pre><code data-trim data-noescape>
+							curl --location 'http://localhost:8080/api/server/status'
+						</code></pre>
+					</section>
+					<section>
+						<span class="menu-title" style="display: none;">API Docs - User</span>
+						<p>Register</p>
+						<pre><code data-trim data-noescape>
+							curl --location 'http://localhost:8080/api/user' \
+							--header 'Content-Type: application/json' \
+							--data '{
+								"displayName": "Lucky Setiawan",
+								"username": "luckysetiawan",
+								"password": "examplepassword123!"
+							}'
+						</code></pre>
+						<p>Login</p>
+						<pre><code data-trim data-noescape>
+							curl --location 'http://localhost:8080/api/login' \
+							--header 'Content-Type: application/json' \
+							--data '{
+								"username": "luckysetiawan",
+								"password": "examplepassword123!"
+							}'
+						</code></pre>
+					</section>
+					<section>
+						<span class="menu-title" style="display: none;">API Docs - User (2)</span>
+						<p>Logout</p>
+						<pre><code data-trim data-noescape>
+							curl --location --request POST 'http://localhost:8080/api/logout'
+						</code></pre>
+						<p>Get All Active Users</p>
+						<pre><code data-trim data-noescape>
+							curl --location 'http://localhost:8080/api/user/active'
+						</code></pre>
+					</section>
+					<section>
+						<span class="menu-title" style="display: none;">API Docs - User (3)</span>
+						<p>Get All Users</p>
+						<pre><code data-trim data-noescape>
+							curl --location 'http://localhost:8080/api/user'
+						</code></pre>
+						<p>Find User</p>
+						<pre><code data-trim data-noescape>
+							curl --location 'http://localhost:8080/api/user/luckysetiawan'
+						</code></pre>
+					</section>
+					<section>
+						<span class="menu-title" style="display: none;">API Docs - Curio</span>
+						<p>Insert</p>
+						<pre><code data-trim data-noescape>
+							curl --location 'http://localhost:8080/api/curio/luckysetiawan' \
+							--header 'Content-Type: text/plain' \
+							--data '{
+								"content": "What do you plan to achieve one year from now?"
+							}'
+						</code></pre>
+						<p>Update</p>
+						<pre><code data-trim data-noescape>
+							curl --location --request PUT 'http://localhost:8080/api/curio/_ID'
+						</code></pre>
+					</section>
+				</section>
+
+				<!-- 2nd slide -->
+				<section>
+					<section>
+						<span class="menu-title" style="display: none;">SVD Audio Watermarking</span>
+						<h2><span class="rainbow_text_animated">SVD Audio Watermarking</span></h2>
+						<p>SVD Audio Watermarking is an app that implements the Singular Value Decomposition method for digital audio watermarking. This app offers a highly robust and imperceptible watermarking solution to insert an image watermark into a digital audio file.</p>
+						
+						<icon-component logo="flask"></icon-component>
+						<icon-component logo="nextjs"></icon-component>
+					</section>
+					<section>
+						<span class="menu-title" style="display: none;">About SVD Audio Watermarking</span>
+						<p>SVD Audio Watermarking back end is built on Flask and it works as a microservice. While the front end app is created using Next.js.</p>
+						<p>Here are the main features that are offered by SVD Audio Watermarking:</p>
+							
+						<ol>
+							<li>Watermark Embedding</li>
+							<li>Watermark Extraction</li>
+							<li>Signal Processing Attacks</li>
+						</ol>
+					</section>
+					<section>
+						<span class="menu-title" style="display: none;">App - Home Page</span>
+						<p>Home Page</p>
+						<img src="media/svd-audio-watermarking/index.png" alt="Home Page">
+					</section>
+					<section>
+						<span class="menu-title" style="display: none;">App - Watermark Embedding</span>
+						<p>Watermark Embedding</p>
+						<img src="media/svd-audio-watermarking/embed1.png" alt="Watermark Embedding">
+					</section>
+					<section>
+						<span class="menu-title" style="display: none;">App - Watermark Embedding Result</span>
+						<p>Watermark Embedding Result</p>
+						<img src="media/svd-audio-watermarking/embed2.png" alt="Watermark Embedding Result">
+					</section>
+					<section>
+						<span class="menu-title" style="display: none;">App - Watermark Extraction</span>
+						<p>Watermark Extraction</p>
+						<img src="media/svd-audio-watermarking/extract1.png" alt="Watermark Extraction">
+					</section>
+					<section>
+						<span class="menu-title" style="display: none;">App - Watermark Extraction Result</span>
+						<p>Watermark Extraction Result</p>
+						<img src="media/svd-audio-watermarking/extract2.png" alt="Watermark Extraction Result">
+					</section>
+					<section>
+						<span class="menu-title" style="display: none;">App - Signal Processing Attacks</span>
+						<p>Signal Processing Attacks</p>
+						<img src="media/svd-audio-watermarking/attack1.png" alt="Signal Processing Attacks">
+					</section>
+					<section>
+						<span class="menu-title" style="display: none;">App - Signal Processing Attacks Result</span>
+						<p>Signal Processing Attacks Result</p>
+						<img src="media/svd-audio-watermarking/attack2.png" alt="Signal Processing Attacks Result">
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<!-- 3rd Party JS -->
+		<script src="lib/particles.js/particles.min.js"></script>
+		<script src="lib/reveal.js/reveal.js"></script>
+		<script src="plugin/menu/menu.js"></script>
+		<script src="plugin/highlight/plugin.js"></script>
+		<!-- Internal JS -->
+		<script src="js/app.js"></script>
+	</body>
+</html>

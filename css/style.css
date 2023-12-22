@@ -1,0 +1,53 @@
+/* Contact Styling */
+.mobile-contact {
+    height: 30%;
+    width: 30%;
+}
+
+.desktop-contact {
+    height: auto;
+    width: auto;
+}
+
+/* Text Rainbow Color Animation */
+:root {
+    --c1: #8900ff;
+    --c2: #6f00ff;
+    --c3: #0092ff;
+    --c4: #00c5ff;
+    --c5: #00f9ff;
+}
+
+.rainbow_text_animated {
+    background: linear-gradient(to right, var(--c1), var(--c2), var(--c3), var(--c4), var(--c5));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 5s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%, 100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+/* Navigation Menu Styling */
+.fa-globe, .fa-times, .slide-menu-toolbar-label {
+    color: #ff7324;
+}
+
+/* Particles.js Styling */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
