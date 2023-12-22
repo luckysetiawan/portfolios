@@ -2,7 +2,6 @@
 Reveal.initialize({
   hash: true,
   jumpToSlide: false,
-  history: true,
   overview: false,
   mouseWheel: true,
   help: false,
