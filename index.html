@@ -27,7 +27,7 @@
 			<a class="button" href="https://luckysetiawan.github.io/"><i class="fa-solid fa-house"></i></a>
 			<div id="particles-js"></div>
 			<div class="slides">
-				<!-- 1st slide -->
+				<!-- Curio-QA -->
 				<section>
 					<section>
 						<span class="menu-title" style="display: none;">Curio-QA</span>
@@ -47,71 +47,71 @@
 						<span class="menu-title" style="display: none;">API Docs - Server Status</span>
 						<p>Check Server Status</p>
 						<pre><code data-trim data-noescape>
-							curl --location 'http://localhost:8080/api/server/status'
+curl --location 'http://localhost:8080/api/server/status'
 						</code></pre>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">API Docs - User</span>
 						<p>Register</p>
 						<pre><code data-trim data-noescape>
-							curl --location 'http://localhost:8080/api/user' \
-							--header 'Content-Type: application/json' \
-							--data '{
-								"displayName": "Lucky Setiawan",
-								"username": "luckysetiawan",
-								"password": "examplepassword123!"
-							}'
+curl --location 'http://localhost:8080/api/user' \
+--header 'Content-Type: application/json' \
+--data '{
+	"displayName": "Lucky Setiawan",
+	"username": "luckysetiawan",
+	"password": "examplepassword123!"
+}'
 						</code></pre>
 						<p>Login</p>
 						<pre><code data-trim data-noescape>
-							curl --location 'http://localhost:8080/api/login' \
-							--header 'Content-Type: application/json' \
-							--data '{
-								"username": "luckysetiawan",
-								"password": "examplepassword123!"
-							}'
+curl --location 'http://localhost:8080/api/login' \
+--header 'Content-Type: application/json' \
+--data '{
+	"username": "luckysetiawan",
+	"password": "examplepassword123!"
+}'
 						</code></pre>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">API Docs - User (2)</span>
 						<p>Logout</p>
 						<pre><code data-trim data-noescape>
-							curl --location --request POST 'http://localhost:8080/api/logout'
+curl --location --request POST 'http://localhost:8080/api/logout'
 						</code></pre>
 						<p>Get All Active Users</p>
 						<pre><code data-trim data-noescape>
-							curl --location 'http://localhost:8080/api/user/active'
+curl --location 'http://localhost:8080/api/user/active'
 						</code></pre>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">API Docs - User (3)</span>
 						<p>Get All Users</p>
 						<pre><code data-trim data-noescape>
-							curl --location 'http://localhost:8080/api/user'
+curl --location 'http://localhost:8080/api/user'
 						</code></pre>
 						<p>Find User</p>
 						<pre><code data-trim data-noescape>
-							curl --location 'http://localhost:8080/api/user/luckysetiawan'
+curl --location 'http://localhost:8080/api/user/luckysetiawan'
 						</code></pre>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">API Docs - Curio</span>
 						<p>Insert</p>
 						<pre><code data-trim data-noescape>
-							curl --location 'http://localhost:8080/api/curio/luckysetiawan' \
-							--header 'Content-Type: text/plain' \
-							--data '{
-								"content": "What do you plan to achieve one year from now?"
-							}'
+curl --location 'http://localhost:8080/api/curio/luckysetiawan' \
+--header 'Content-Type: text/plain' \
+--data '{
+	"content": "What do you plan to achieve one year from now?"
+}'
 						</code></pre>
 						<p>Update</p>
 						<pre><code data-trim data-noescape>
-							curl --location --request PUT 'http://localhost:8080/api/curio/_ID'
+curl --location --request PUT 'http://localhost:8080/api/curio/_ID'
 						</code></pre>
 					</section>
 				</section>
 
-				<!-- 2nd slide -->
+				<!-- SVD Audio Watermarking -->
 				<section>
 					<section>
 						<span class="menu-title" style="display: none;">SVD Audio Watermarking</span>
@@ -135,37 +135,55 @@
 					<section>
 						<span class="menu-title" style="display: none;">App - Home Page</span>
 						<p>Home Page</p>
-						<img src="media/svd-audio-watermarking/index.png" alt="Home Page">
+						<img src="media/svd-audio-watermarking/ui/index.png" alt="Home Page">
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">App - Watermark Embedding</span>
 						<p>Watermark Embedding</p>
-						<img src="media/svd-audio-watermarking/embed1.png" alt="Watermark Embedding">
+						<img src="media/svd-audio-watermarking/ui/embed1.png" alt="Watermark Embedding">
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">App - Watermark Embedding Result</span>
 						<p>Watermark Embedding Result</p>
-						<img src="media/svd-audio-watermarking/embed2.png" alt="Watermark Embedding Result">
+						<img src="media/svd-audio-watermarking/ui/embed2.png" alt="Watermark Embedding Result">
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">App - Watermark Extraction</span>
 						<p>Watermark Extraction</p>
-						<img src="media/svd-audio-watermarking/extract1.png" alt="Watermark Extraction">
+						<img src="media/svd-audio-watermarking/ui/extract1.png" alt="Watermark Extraction">
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">App - Watermark Extraction Result</span>
 						<p>Watermark Extraction Result</p>
-						<img src="media/svd-audio-watermarking/extract2.png" alt="Watermark Extraction Result">
+						<img src="media/svd-audio-watermarking/ui/extract2.png" alt="Watermark Extraction Result">
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">App - Signal Processing Attacks</span>
 						<p>Signal Processing Attacks</p>
-						<img src="media/svd-audio-watermarking/attack1.png" alt="Signal Processing Attacks">
+						<img src="media/svd-audio-watermarking/ui/attack1.png" alt="Signal Processing Attacks">
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">App - Signal Processing Attacks Result</span>
 						<p>Signal Processing Attacks Result</p>
-						<img src="media/svd-audio-watermarking/attack2.png" alt="Signal Processing Attacks Result">
+						<img src="media/svd-audio-watermarking/ui/attack2.png" alt="Signal Processing Attacks Result">
+					</section>
+					<section>
+						<span class="menu-title" style="display: none;">App - Original Watermark</span>
+						<p>Original Watermark</p>
+						<p>Here is the original watermark used to test the robustness of this app:</p>
+						<img src="media/svd-audio-watermarking/result/watermark.png" alt="Result" style="width: 50vh;">
+					</section>
+					<section>
+						<span class="menu-title" style="display: none;">App - Extracted Watermark</span>
+						<p>Extracted Watermark</p>
+						<img src="media/svd-audio-watermarking/result/best_nc_noatk_awgn_resampling_lowpass.png" alt="Result" style="width: 50vh;">
+						<p>Attack used: (1) Without attacks, (2) AWGN, (3) Resampling, (4) Low-pass filter</p>
+					</section>
+					<section>
+						<span class="menu-title" style="display: none;">App - Imperceptibility</span>
+						<p>Imperceptibility</p>
+						<p>Comparison of the first second of the original audio with the watermarked audio.</p>
+						<img src="media/svd-audio-watermarking/result/best_snr_comp.png" alt="Result">
 					</section>
 				</section>
 			</div>
