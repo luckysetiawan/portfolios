@@ -1,3 +1,12 @@
+/* Layout Styling */
+.flex {
+    display: flex;
+}
+
+.android {
+    height: 75vh;
+}
+
 /* Button Styling */
 .button {
     top: 25px;
