@@ -67,3 +67,37 @@
     top: 0;
     z-index: 1;
 }
+
+/* Toggle Switch Styling */
+.switch {
+    position: relative;
+    display: inline-block;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20vh;
+    color: #ff7324;
+}
+
+.slider .fa-toggle-on {
+    display: none;
+}
+
+input:checked + .slider .fa-toggle-off {
+    display: none;
+}
+
+input:checked + .slider .fa-toggle-on {
+    display: inline-block;
+}
