@@ -11,3 +11,4 @@ This is my portfolios. This project is part of [my personal website](https://luc
 * [Font Awesome](https://fontawesome.com/)
 * [particles.js](https://vincentgarreau.com/particles.js/)
 * [ICONS8](https://icons8.com/)
+* [Fancybox](https://fancyapps.com/fancybox/)

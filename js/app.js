@@ -185,6 +185,13 @@ particlesJS('particles-js',
 
 );
 
+// Initialize Fancybox
+Fancybox.bind('[data-fancybox]', {
+  Images: {
+    initialSize: 'fit',
+  },
+});
+
 let toggle = document.getElementById('toggleVisibility');
 toggle.checked = false;
 

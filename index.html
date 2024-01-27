@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="lib/reveal.js/reset.css">
 		<link rel="stylesheet" href="lib/reveal.js/reveal.css">
 		<link rel="stylesheet" href="lib/reveal.js/theme/lucky.css" id="theme">
+		<link rel="stylesheet" href="lib/fancyapps/fancybox/fancybox.css">
 		<link rel="stylesheet" href="lib/fontawesome/css/fontawesome.min.css">
 		<link rel="stylesheet" href="lib/fontawesome/css/brands.min.css">
 		<link rel="stylesheet" href="lib/fontawesome/css/solid.min.css">
@@ -21,7 +22,7 @@
 
 		<!-- Internal JS -->
 		<script src="js/component.js"></script>
-    <script src="js/data.js"></script>
+    	<script src="js/data.js"></script>
 	</head>
 	<body>
 		<div class="reveal">
@@ -136,55 +137,75 @@ curl --location --request PUT 'http://localhost:8080/api/curio/_ID'
 					<section>
 						<span class="menu-title" style="display: none;">Home Page</span>
 						<p>Home Page</p>
-						<img src="media/svd-audio-watermarking/ui/index.png" alt="Home Page">
+						<a href="media/svd-audio-watermarking/ui/index.png" data-fancybox>
+							<img data-src="media/svd-audio-watermarking/ui/index.png" alt="Home Page">
+						</a>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Watermark Embedding</span>
 						<p>Watermark Embedding</p>
-						<img src="media/svd-audio-watermarking/ui/embed1.png" alt="Watermark Embedding">
+						<a href="media/svd-audio-watermarking/ui/embed1.png" data-fancybox>
+							<img data-src="media/svd-audio-watermarking/ui/embed1.png" alt="Watermark Embedding">
+						</a>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Watermark Embedding Result</span>
 						<p>Watermark Embedding Result</p>
-						<img src="media/svd-audio-watermarking/ui/embed2.png" alt="Watermark Embedding Result">
+						<a href="media/svd-audio-watermarking/ui/embed2.png" data-fancybox>
+							<img data-src="media/svd-audio-watermarking/ui/embed2.png" alt="Watermark Embedding Result">
+						</a>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Watermark Extraction</span>
 						<p>Watermark Extraction</p>
-						<img src="media/svd-audio-watermarking/ui/extract1.png" alt="Watermark Extraction">
+						<a href="media/svd-audio-watermarking/ui/extract1.png" data-fancybox>
+							<img data-src="media/svd-audio-watermarking/ui/extract1.png" alt="Watermark Extraction">
+						</a>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Watermark Extraction Result</span>
 						<p>Watermark Extraction Result</p>
-						<img src="media/svd-audio-watermarking/ui/extract2.png" alt="Watermark Extraction Result">
+						<a href="media/svd-audio-watermarking/ui/extract2.png" data-fancybox>
+							<img data-src="media/svd-audio-watermarking/ui/extract2.png" alt="Watermark Extraction Result">
+						</a>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Signal Processing Attacks</span>
 						<p>Signal Processing Attacks</p>
-						<img src="media/svd-audio-watermarking/ui/attack1.png" alt="Signal Processing Attacks">
+						<a href="media/svd-audio-watermarking/ui/attack1.png" data-fancybox>
+							<img data-src="media/svd-audio-watermarking/ui/attack1.png" alt="Signal Processing Attacks">
+						</a>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Signal Processing Attacks Result</span>
 						<p>Signal Processing Attacks Result</p>
-						<img src="media/svd-audio-watermarking/ui/attack2.png" alt="Signal Processing Attacks Result">
+						<a href="media/svd-audio-watermarking/ui/attack2.png" data-fancybox>
+							<img data-src="media/svd-audio-watermarking/ui/attack2.png" alt="Signal Processing Attacks Result">
+						</a>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Original Watermark</span>
 						<p>Original Watermark</p>
 						<p>Here is the original watermark used to test the robustness of this app:</p>
-						<img src="media/svd-audio-watermarking/result/watermark.png" alt="Result" style="width: 50vh;">
+						<a href="media/svd-audio-watermarking/result/watermark.png" data-fancybox>
+							<img data-src="media/svd-audio-watermarking/result/watermark.png" alt="Result" style="width: 50vh;">
+						</a>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Extracted Watermark</span>
 						<p>Extracted Watermark</p>
-						<img src="media/svd-audio-watermarking/result/best_nc_noatk_awgn_resampling_lowpass.png" alt="Result" style="width: 50vh;">
+						<a href="media/svd-audio-watermarking/result/best_nc_noatk_awgn_resampling_lowpass.png" data-fancybox>
+							<img data-src="media/svd-audio-watermarking/result/best_nc_noatk_awgn_resampling_lowpass.png" alt="Result" style="width: 50vh;">
+						</a>
 						<p>Attack used: (1) Without attacks, (2) AWGN, (3) Resampling, (4) Low-pass filter</p>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Imperceptibility</span>
 						<p>Imperceptibility</p>
 						<p>Comparison of the first second of the original audio with the watermarked audio.</p>
-						<img src="media/svd-audio-watermarking/result/best_snr_comp.png" alt="Result">
+						<a href="media/svd-audio-watermarking/result/best_snr_comp.png" data-fancybox>
+							<img data-src="media/svd-audio-watermarking/result/best_snr_comp.png" alt="Result">
+						</a>
 					</section>
 				</section>
 
@@ -205,31 +226,45 @@ curl --location --request PUT 'http://localhost:8080/api/curio/_ID'
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Control Scheme</span>
-						<img src="media/phasmophilia/control_scheme.png" alt="Control Scheme">
+						<a href="media/phasmophilia/control_scheme.png" data-fancybox>
+							<img data-src="media/phasmophilia/control_scheme.png" alt="Control Scheme">
+						</a>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Map 1: City Outskirts</span>
-						<img src="media/phasmophilia/map1.png" alt="Map 1">
+						<a href="media/phasmophilia/map1.png" data-fancybox>
+							<img data-src="media/phasmophilia/map1.png" alt="Map 1">
+						</a>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Map 2: RTX Lab</span>
-						<img src="media/phasmophilia/map2.png" alt="Map 2">
+						<a href="media/phasmophilia/map2.png" data-fancybox>
+							<img data-src="media/phasmophilia/map2.png" alt="Map 2">
+						</a>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Main Menu</span>
-						<img src="media/phasmophilia/main_menu.png" alt="Main Menu">
+						<a href="media/phasmophilia/main_menu.png" data-fancybox>
+							<img data-src="media/phasmophilia/main_menu.png" alt="Main Menu">
+						</a>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">In-Game</span>
-						<img src="media/phasmophilia/in_game.png" alt="In-Game">
+						<a href="media/phasmophilia/in_game.png" data-fancybox>
+							<img data-src="media/phasmophilia/in_game.png" alt="In-Game">
+						</a>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Interactions</span>
-						<img src="media/phasmophilia/interactions.png" alt="Interactions">
+						<a href="media/phasmophilia/interactions.png" data-fancybox>
+							<img data-src="media/phasmophilia/interactions.png" alt="Interactions">
+						</a>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Low Health</span>
-						<img src="media/phasmophilia/low_health.png" alt="Low Health">
+						<a href="media/phasmophilia/low_health.png" data-fancybox>
+							<img data-src="media/phasmophilia/low_health.png" alt="Low Health">
+						</a>
 					</section>
 				</section>
 
@@ -249,19 +284,27 @@ curl --location --request PUT 'http://localhost:8080/api/curio/_ID'
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Game Rules</span>
-						<img src="media/zombie-survival/game_rules.png" alt="Game Rules">
+						<a href="media/zombie-survival/game_rules.png" data-fancybox>
+							<img data-src="media/zombie-survival/game_rules.png" alt="Game Rules">
+						</a>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Player</span>
-						<img src="media/zombie-survival/player.png" alt="Player">
+						<a href="media/zombie-survival/player.png" data-fancybox>
+							<img data-src="media/zombie-survival/player.png" alt="Player">
+						</a>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Zombie Agent 1</span>
-						<img src="media/zombie-survival/zombie_agent_1.png" alt="Zombie Agent 1">
+						<a href="media/zombie-survival/zombie_agent_1.png" data-fancybox>
+							<img data-src="media/zombie-survival/zombie_agent_1.png" alt="Zombie Agent 1">
+						</a>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Zombie Agent 2</span>
-						<img src="media/zombie-survival/zombie_agent_2.png" alt="Zombie Agent 2">
+						<a href="media/zombie-survival/zombie_agent_2.png" data-fancybox>
+							<img data-src="media/zombie-survival/zombie_agent_2.png" alt="Zombie Agent 2">
+						</a>
 					</section>
 				</section>
 
@@ -280,27 +323,40 @@ curl --location --request PUT 'http://localhost:8080/api/curio/_ID'
 						<span class="menu-title" style="display: none;">Login</span>
 						<p>Login</p>
 						<div>
-							<img src="media/masimelrowoo/login.png" class="android" alt="Login">
-							<img src="media/masimelrowoo/login2.png" class="android" alt="Login">
+							<a href="media/masimelrowoo/login.png" data-fancybox>
+								<img data-src="media/masimelrowoo/login.png" class="android" alt="Login">
+							</a>
+							<a href="media/masimelrowoo/login2.png" data-fancybox>
+								<img data-src="media/masimelrowoo/login2.png" class="android" alt="Login">
+							</a>
 						</div>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Send Masimelrowoo</span>
 						<p>Send Masimelrowoo</p>
-						<img src="media/masimelrowoo/send.png" class="android" alt="Send Masimelrowoo">
+						<a href="media/masimelrowoo/send.png" data-fancybox>
+							<img data-src="media/masimelrowoo/send.png" class="android" alt="Send Masimelrowoo">
+						</a>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Mailbox</span>
 						<p>Personal Mailbox & Global Mailbox</p>
 						<div>
-							<img src="media/masimelrowoo/mailbox.png" class="android" alt="Personal Mailbox">
-							<img src="media/masimelrowoo/to_everyone.png" class="android" alt="Global Mailbox">
+							<a href="media/masimelrowoo/mailbox.png" data-fancybox>
+								<img data-src="media/masimelrowoo/mailbox.png" class="android" alt="Personal Mailbox">
+							</a>
+							<a href="media/masimelrowoo/to_everyone.png" data-fancybox>
+								<img data-src="media/masimelrowoo/to_everyone.png" class="android" alt="Global Mailbox">
+							</a>
+						</a>
 						</div>
 					</section>
 					<section>
 						<span class="menu-title" style="display: none;">Friend</span>
 						<p>Friend</p>
-						<img src="media/masimelrowoo/friend.png" class="android" alt="Friend">
+						<a href="media/masimelrowoo/friend.png" data-fancybox>
+							<img data-src="media/masimelrowoo/friend.png" class="android" alt="Friend">
+						</a>
 					</section>
 				</section>
 				<section>
@@ -324,6 +380,7 @@ curl --location --request PUT 'http://localhost:8080/api/curio/_ID'
 		<script src="lib/reveal.js/reveal.js"></script>
 		<script src="plugin/menu/menu.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="lib/fancyapps/fancybox/fancybox.umd.js"></script>
 		<!-- Internal JS -->
 		<script src="js/app.js"></script>
 	</body>
